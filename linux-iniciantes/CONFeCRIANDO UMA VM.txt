@@ -1,0 +1,51 @@
+Instalação Virtual box no windows
+
+depois do software baixado e intalado 
+
+abra CMD como ADM 
+
+Comandos: 
+  bcdedit
+	Verificar se a ultima opção é hypervisiorlaunchtype off 
+		se hypervisiorlaunchtype alto (desativer o hypervisior)
+			comando 
+				bcdedite /set hypervisiorlaunchtype off
+					reiniciar o PC
+
+Painel de controle 
+	programas 
+		progrmas e recursos	
+			Ativar ou desativar recursos do windows 
+				Procura: plataforma do Hypervisior do windows 	(habilita) 
+						repete o comando bcdedit
+
+
+
+
+Criando um VM como o linux
+	Procedimento Padrão usando modo experte
+		Seleciona o sistema Operacionão e a versão
+			 minimo 512 de memoria (sem ambiente grafico)
+		tamanho do arquivo 20 gb
+		VDI (padrão)
+		Tamanho alocado de armazenamento
+
+	Configurando rede 
+		Rede 
+			Quantidade de Adaptador 
+				Conectado A: Placa em modo Bridge (para permitir que da maquina fisica seja acessado a marquina vitual)
+				Nome: nome da placa de rede (se for cabo ou wifi)
+
+	Instalar o sistema operacional
+		Armazenamento
+			Controladore: IDE
+				Disco
+					Esclhe a imagem ISO em drive optico
+
+	Se, não ligar a maquina (verificar a BIOS) e ativar a virtualização
+
+
+   LIGANDO A MAQUINA VIRTUAL
+		
+				
+						

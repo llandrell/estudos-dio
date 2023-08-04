@@ -1,0 +1,13 @@
+Comando linux (por padrão todos os comandos linux e minuculos)
+	
+	
+	Sudo (da permissão de ADM ou SUPER USUARIO, sem a necessidade de logar o mesmo)
+		"sudo" é uma abreviatura de "SuperUser Do
+
+	reboot (reniciar o sistema) sudo reboot caso fale que não tem permissão
+	
+	shutdown 0  (comando para desligar a maquina logo em seguida o tempo que eu quero que ela deslique)
+
+	
+
+	

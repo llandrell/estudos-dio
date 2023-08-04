@@ -1,0 +1,20 @@
+Comando linux (por padrão todos os comandos linux e minuculos)
+	
+	
+	Sudo (da permissão de ADM ou SUPER USUARIO, sem a necessidade de logar o mesmo)
+		"sudo" é uma abreviatura de "SuperUser Do
+
+	reboot (reniciar o sistema) sudo reboot caso fale que não tem permissão
+	
+	shutdown 0  (comando para desligar a maquina logo em seguida o tempo que eu quero que ela deslique)
+
+	ls /sys/kernel/p* comando usado para listar todos os arquivos dentro de uma determinada pasta
+
+	find -name arq* busca todos os caquivos apartir da pasta onde eu estou com o nome arq*completmento
+
+		onde find e o comando para procurar -name o parametro no caso arquivos pelo nome arq as iniciais do filtro que eu quero e * quer dizer que todo que tiver depois do arq
+
+		
+teste
+
+	
