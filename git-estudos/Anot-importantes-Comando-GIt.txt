@@ -1,0 +1,53 @@
+Comandos _GIT_
+
+git clone (repositorio) = Clona um repositorio Exp: git clone <https://link-com-o-nome-do-repositório>
+
+git fetch -all (obtem todas as branches atualizadas)
+
+git checkout <nome da Branch// git checkout -b <nome da branch> (cria a develop caso vc não tenha mas verificva no projeto q vc ta trabalahndo se criaram com outro nome  
+
+git checkout -b <nome da branch>
+
+
+git push -u = Envia o Codigo "Empurra" é enviar suas alterações ao servidor remoto.  =  git push -u <local-remoto> <nome-da-branch>
+
+	* Entretanto, se a sua branch foi recém-criada, também é preciso fazer o upload da branch com o seguinte comando:
+		git push --set-upstream <repositório-remoto> <nome-da-branch> 
+				ou 
+		git push -u origin <nome-da-branch>
+		git push -u origin main
+	* Importante: git push somente faz o upload das alterações que já estão em um commit.
+
+git branch ou git branch --list = Ver as branches
+
+git checkout = Serve para "entrar na Brach  = git checkout <nome-da-branch>
+
+ 	*As alterações em sua branch atual devem estar em um commit ou em um stash antes de você fazer a troca
+	*A branch na qual você quer fazer o checkout deve existir no seu espaço de trabalho local
+
+git checkout -b <nome-da-branch> = criar e automaticamente trocar para a branch criada
+
+
+git status = os dá todas as informações necessárias sobre a branch atual.
+
+
+git add = incluir as alterações de um ou vários arquivos em nosso próximo commit = git add <arquivo>
+git add -A = todos os arquivos
+git add . 
+git add 
+
+	* Importante: o comando git add não altera o repositório. As alterações não são salvas até que se use o git commit.
+ 
+
+Git commit =  Defini um ponto de verificação no processo de desenvolvimento. Podendo retorna a ele se necessarios = git commit -m "mensagem do commit"
+	* importante: mensagem breve para explicar o que desenvolvemos ou alteramos no código-fonte.
+	** Importante²: git commit salva suas alterações no espaço de trabalho local.
+
+ 
+Git pull = obter as atualizações de um repositório remoto. uma combinação de git fetch e git merge = git pull <repositório-remoto>
+	* Essa operação pode causar conflitos que você precisará resolver manualmente.
+
+
+Git revert = desfazer as alterações que fizemos. = git revert <codigo hash> Exemplo git revert 3321844
+
+	git log -- oneline: = ver nosso histórico de commits
