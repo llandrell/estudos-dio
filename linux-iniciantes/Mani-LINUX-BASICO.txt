@@ -1,0 +1,127 @@
+Comando linux (por padrão todos os comandos linux e minuculos)
+	
+	nome@local:~$
+		nome = usuario
+		@ = local onde está logado
+			local = nome do local onde estou logado
+		~ = diretorio do usuario
+		$ = indica o privilegio do usuario (Restrito)
+		# = privilegio de super usuarios
+		/ = raiz do sistema de arquivos
+		| = PIPE ou conecção  ( usado para redirecionar a saída de um comando para a entrada de outro comando. Isso permite que você encadeie vários comandos juntos para realizar tarefas mais complexas.)
+
+		-a = O flag -a indica que o comando deve listar todos os arquivos, incluindo os ocultos (que começam com .).
+		-lt =  o flag -lt mostra o diretório de forma detalhada, ordenado por tempo de modificação:
+		-h = O flag -h faz com que os tamanhos dos arquivos sejam exibidos em formatos como "KB", "MB", etc.
+
+		? = O ponto de interrogação é um caractere curinga que corresponde a qualquer caractere único.
+
+		"*" corresponde a todos os caracteres no nome do arquivo ou diretório
+
+		todo diretorio tem uma / no final
+		já app e outros não possuem uma / quando listados
+
+
+	** pressionar a tecla "Tab" duas vezes enquanto estiver digitando um comando no terminal resultará na exibição de sugestões de autocompletar. 
+			útil quando você não tem certeza do nome exato de um arquivo
+	
+
+	date = comando para mostrar a data
+
+	clear = comando para limpar a tela
+		ou crtl l
+
+	cd = comando para mudar o diretório atual 
+
+	ls = comando para listar os arquivos na pasta
+
+	Sudo (da permissão de ADM ou SUPER USUARIO, sem a necessidade de logar o mesmo)
+		"sudo" é uma abreviatura de "SuperUser Do
+
+	reboot (reniciar o sistema) sudo reboot caso fale que não tem permissão
+	
+	shutdown 0  (comando para desligar a maquina logo em seguida o tempo que eu quero que ela deslique)
+
+	touch nome_do_arquivo = é usado para criar arquivos vazios ou para atualizar as informações de data e hora de modificação de um arquivo existente.
+		se o arquivo já existir, o comando touch atualizará a data de modificação para a data e hora atual.
+		pode se criar múltiplos arquivos de uma vez:
+			touch arquivo1.txt arquivo2.txt arquivo3.txt
+			touch /caminho/do/diretorio/novo_arquivo.txt
+			touch -t 202308081200 novo_arquivo.txt = Criar um arquivo em um diretório específico e definir uma data e hora personalizada:
+
+
+	
+-------------------------------------------------------------------------------------------------------------------------------------
+											 NAVEGANDO PELO SISTEMAS DE ARQUIVO LINUX
+
+cd = comando para mudar o diretório atual 
+
+	cd .. Para voltar ao diretório anterior (diretório pai):
+
+	digitar cd sem argumentos o levará de volta ao seu diretório inicial.
+
+	Para acessar um diretório com espaços no nome, use aspas: 
+		exemplo: cd "diretório com espaço"
+
+	cd / = indica que eu quero ir para a raiz
+
+	pode usar comandos agrupados exemplos:
+
+		cd ../caminho = comando para voltar ao diretório anterior e acessar o diretorio caminho
+
+		cd /caminho/do/arquivo = tambem pode ser usado para acessar arquivos onde você ja saiba o caminho especifico. 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+pwd = comando para exibir o diretório de trabalho atual
+	print working directory
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+ls = Listar o conteúdo do diretório atual
+
+	ls caminho/do/diretorio = Listar o conteúdo de um diretório específico
+
+	ls -l = Listar o conteúdo de um diretório de forma detalhada
+
+	ls -la mesma coisa que o -l porem com arquivos ocutos
+
+		O flag -a indica que o comando deve listar todos os arquivos, incluindo os ocultos (que começam com .).
+
+
+												    	Filtrando a exibição de arquivos
+												(man ls = para abrir o manual de listar arquivos)
+
+ls | more =  exibirá a lista de arquivos e diretórios um por um, permitindo que você role pela lista usando a tecla "Espaço" ou saia pressionando "Q" quando estiver satisfeito ou cltr C.
+
+ls nomeDoArquivo = o sistema tentará listar o conteúdo do diretório ou arquivo chamado "nomeDoArquivo" no diretório atual. 
+	Se não existir um diretório ou arquivo chamado retornara um erro
+
+ls *.txt = Listar arquivos usando um padrão de busca:
+	exemplo = lista todos os arquivos com final .txt
+
+ls p* = Listar arquivos usando um padrão de busca, por letra inicial
+	exemplo = lista todos os arquivos com incio da letra p
+		uma das grandes vantagens de usar o ls assim* e que ele lista todos os itens que estão dentro do diretorio que começa com a letra indicada.
+
+ls a?d* = ls com padrões de busca, como a?d*, onde a ? representa qualquer caracter entre a e b e o * *" corresponde a todos os caracteres no nome do arquivo ou diretório depois da letra d.
+			1- O nome começa com "a".
+			2- O segundo caractere é qualquer caractere único. 
+			3- O terceiro caractere é "d".
+			4- O restante do nome pode ser qualquer sequência de caracteres.
+
+ls -t =Listar arquivos em ordem de tempo de modificação:
+
+ls nomeDoArquivo[1-3].txt = caracteres curinga (wildcards) | cria um filtro para arquivos em sequencia, esse comando vai listar apenas arquivos com o nome citado do 1 ate o 3.
+	ls nomeDoArquivo[2,5].txt = nesse caso so vai lista 2 e o 5
+	ls nomeDoArquivo[^2,5].txt = nesse caso não vai lista 2 e o 5
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+	
