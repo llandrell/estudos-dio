@@ -1,42 +1,71 @@
 Comando linux (por padrão todos os comandos linux e minuculos)
+"Linux command (by default all Linux commands are lowercase)"
 	
-	nome@local:~$
-		nome = usuario
+	name@local:~$
+		name = user
 		@ = local onde está logado
+		@ = location where logged in
 			local = nome do local onde estou logado
+			local = name of the location where I am logged in
 		~ = diretorio do usuario
+		~ = user's home directory
 		$ = indica o privilegio do usuario (Restrito)
+		$ = indicates the user's privilege level (Restricted)
 		# = privilegio de super usuarios
+		# = superuser privilege
 		/ = raiz do sistema de arquivos
+		"/" = root of the file system
 		| = PIPE ou conecção  ( usado para redirecionar a saída de um comando para a entrada de outro comando. Isso permite que você encadeie vários comandos juntos para realizar tarefas mais complexas.)
+		"|" = PIPE or connection (used to redirect the output of one command to the input of another command. This allows you to chain multiple commands together to perform more complex tasks.)
 
 		-a = O flag -a indica que o comando deve listar todos os arquivos, incluindo os ocultos (que começam com .).
+		-a = The -a flag indicates that the command should list all files, including hidden ones (those starting with .).
 		-lt =  o flag -lt mostra o diretório de forma detalhada, ordenado por tempo de modificação:
+		-lt = the -lt flag displays the directory in a detailed manner, sorted by modification time:
 		-h = O flag -h faz com que os tamanhos dos arquivos sejam exibidos em formatos como "KB", "MB", etc.
+		-h = The -h flag displays file sizes in formats like "KB," "MB," etc.
 
 		? = O ponto de interrogação é um caractere curinga que corresponde a qualquer caractere único.
+		? = The question mark is a wildcard character that matches any single character.
 
-		"*" corresponde a todos os caracteres no nome do arquivo ou diretório
-
+		* corresponde a todos os caracteres no nome do arquivo ou diretório
+		* = matches all characters in a file or directory name.
+		
 		todo diretorio tem uma / no final
 		já app e outros não possuem uma / quando listados
+		Every directory has a / at the end, 
+		while files like 'app' and others do not have a / when listed.
 
 
 	** pressionar a tecla "Tab" duas vezes enquanto estiver digitando um comando no terminal resultará na exibição de sugestões de autocompletar. 
 			útil quando você não tem certeza do nome exato de um arquivo
 	
+	** Pressing the "Tab" key twice while typing a command in the terminal will result in displaying autocomplete suggestions. 
+			This is useful when you are unsure of the exact name of a file or directory.
+
+
+
 
 	date = comando para mostrar a data
+	date = command to display the current date.
+	
 
 	clear = comando para limpar a tela
 		ou crtl l
+	clear = command to clear the terminal screen
+	or "Ctrl + L" = keyboard shortcut to clear the terminal screen
 
 	cd = comando para mudar o diretório atual 
+	cd = command to change the current direct
 
 	ls = comando para listar os arquivos na pasta
+	ls = command to list files in the current directory
 
 	Sudo (da permissão de ADM ou SUPER USUARIO, sem a necessidade de logar o mesmo)
 		"sudo" é uma abreviatura de "SuperUser Do
+	"Sudo" (grants administrator or superuser permissions without requiring the same user to log in)
+		"Sudo" is short for "SuperUser Do"
+
 
 	reboot (reniciar o sistema) sudo reboot caso fale que não tem permissão
 	
@@ -117,7 +146,7 @@ ls nomeDoArquivo[1-3].txt = caracteres curinga (wildcards) | cria um filtro para
 
 
 
-
+...
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
